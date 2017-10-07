@@ -13,7 +13,7 @@ namespace TP033142_UIA_booking_sys
     public partial class Dep_Arr_Online_Member: System.Web.UI.Page
     {
         SqlCommand cmd;
-        SqlConnection con = new SqlConnection("Server=tcp:uiaonlinedb.database.windows.net,1433;Initial Catalog=UIA_Online_Database;Persist Security Info=False;User ID={mayuiaonlinedb};Password={may@pass123};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+        SqlConnection con = new SqlConnection("Server=tcp:uiaonlinedb.database.windows.net,1433;Initial Catalog=UIA_Online_Database;Persist Security Info=False;User ID=mayuiaonlinedb;Password=may@pass123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
         public static String depart_day;
         public static String return_day;
