@@ -67,7 +67,7 @@ namespace TP033142_UIA_booking_sys
 
                     con.Open();
                     cmd = new SqlCommand("Update Departure_Seat set Seat_available = 'Unavailable' from Departure_Seat " +
-                        " Inner Join Arrival on " +
+                        " Inner Join Departure on " +
                         "Departure_Seat.Dep_ID = Departure.Dep_ID " +
                         "where Departure_Seat.Seat_No = '" + dep_seat + "' and Departure.Dep_Name = '" + dep + "'", con);
                     cmd.ExecuteNonQuery();
@@ -119,7 +119,7 @@ namespace TP033142_UIA_booking_sys
 
                     con.Open();
                     cmd = new SqlCommand("Update Departure_Seat set Seat_available = 'Unavailable' from Departure_Seat " +
-                        " Inner Join Arrival on " +
+                        " Inner Join Departure on " +
                         "Departure_Seat.Dep_ID = Departure.Dep_ID " +
                         "where Departure_Seat.Seat_No = '"+ dep_seat + "' and Departure.Dep_Name = '"+dep+"'", con);
 
