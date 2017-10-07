@@ -13,13 +13,13 @@ namespace TP033142_UIA_booking_sys
     {
         SqlCommand cmd;
         SqlDataReader dr;
-        SqlConnection con = new SqlConnection("Server=tcp:uiaonlinedb.database.windows.net,1433;Initial Catalog=UIA_Online_Database;Persist Security Info=False;User ID={mayuiaonlinedb};Password={may@pass123};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+        SqlConnection con = new SqlConnection("Server=tcp:uiaonlinedb.database.windows.net,1433;Initial Catalog=UIA_Online_Database;Persist Security Info=False;User ID=mayuiaonlinedb;Password=may@pass123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
         DataTable dt;
         protected void Page_Load(object sender, EventArgs e)
         {
             if(!IsPostBack)
             {
-                Response.Write("<script>alert('Flight Count in Booking is " + Request.QueryString["Flight_count"] + "')</script>");
+               
                 if (Request.QueryString["Flight_count"]=="2")
                 {
 
