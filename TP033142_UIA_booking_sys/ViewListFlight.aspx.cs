@@ -13,7 +13,7 @@ namespace TP033142_UIA_booking_sys
     {
         SqlCommand cmd;
         SqlDataReader dr;
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP-UAD5FC5\\MAYSQL;Initial Catalog=UIA_Online_Database;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Server=tcp:uiaonlinedb.database.windows.net,1433;Initial Catalog=UIA_Online_Database;Persist Security Info=False;User ID={mayuiaonlinedb};Password={may@pass123};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
         DataTable dt;
         static String departure_location;
         static String arrival_location;

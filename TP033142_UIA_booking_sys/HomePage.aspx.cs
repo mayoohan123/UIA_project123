@@ -16,7 +16,7 @@ namespace TP033142_UIA_booking_sys
     public partial class HomePage : System.Web.UI.Page
     {
         SqlCommand cmd;
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP-UAD5FC5\\MAYSQL;Initial Catalog=UIA_Online_Database;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Server=tcp:uiaonlinedb.database.windows.net,1433;Initial Catalog=UIA_Online_Database;Persist Security Info=False;User ID={mayuiaonlinedb};Password={may@pass123};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
         IDataReader dr;
         String name;
         protected void Page_Load(object sender, EventArgs e)
